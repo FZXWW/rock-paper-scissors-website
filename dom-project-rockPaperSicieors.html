@@ -153,9 +153,11 @@
 
          updateScoreElement();
 
+        
          document.querySelector('.js-result').innerHTML = result;
-         document.querySelector(`.js-moves`).innerHTML = `You <img src="images/${playerChoice}-emoji.png" class="move-icon">
-          Computer <img src="images/${computerChoice}-emoji.png" class="move-icon">`;
+         document.querySelector(`.js-moves`).innerHTML = `You <img src="images/${playerChoice.toLowerCase()}-emoji.png" class="move-icon">
+          Computer <img src="images/${computerChoice.toLowerCase()}-emoji.png" class="move-icon">`;
+        
         
         // alert(`You picked ${playerChoice}. Computer picked ${computerChoice}. ${result} 
         // Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`);
